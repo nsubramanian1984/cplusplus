@@ -27,8 +27,11 @@ void extractHourGlasses(vector< vector<int> >& arr, int x, int y, int& oldSum) {
     for(int i = start; i <= end; i++){
        for(int j = start; j <= end; j++){
             sum += hourGlass[i][j];
+            cout << hourGlass[i][j] << " ";
         }
+        cout << endl;
     }
+    cout << "sum : " << sum << endl;
 
     if(oldSum < sum) {
         oldSum = sum;
@@ -44,7 +47,7 @@ int main(){
     }
 
     vector< vector<int> > hourGlass(3, vector<int>(3));
-    int sum = 0;
+    int sum = -2147483648; // number cannot be lower than this;
     for(int i = 0; i < 4; i++) {
         for(int j = 0; j < 4; j++) {
             extractHourGlasses(arr, i, j, sum);
