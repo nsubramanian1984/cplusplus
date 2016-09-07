@@ -1,0 +1,8 @@
+make clean
+	To remove all the object files
+
+make all
+	To create the output file.
+
+./MasterMind
+	To play the game.
