@@ -1,0 +1,5 @@
+Starter pack for yajl.
+
+Limitations:
+Array parsing is not possible. Though, requires only a few lines of code to implement.
+
